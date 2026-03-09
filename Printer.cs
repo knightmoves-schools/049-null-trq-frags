@@ -5,10 +5,10 @@ namespace knightmoves;
 public class Printer{
     
     public string Print(string message){
-        return message;
+        return message ?? "no message";
     }
 
     public string Print(StringBuilder message){
-        return message.ToString();
+        return message?.ToString();
     }
 }
